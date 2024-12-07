@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class Player : MonoBehaviour
 {
     public int health = 10;
+    public int maxHealth = 10;
 
     public void TakeDamage(int dmg)
     {
