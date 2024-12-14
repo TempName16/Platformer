@@ -7,6 +7,12 @@ public class Player : MonoBehaviour
 {
     public int health = 10;
     public int maxHealth = 10;
+    public int coins = 0;
+
+    public void GetCoin()
+    {
+        coins++;
+    }
 
     public void TakeDamage(int dmg)
     {
