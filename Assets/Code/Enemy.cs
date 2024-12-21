@@ -13,13 +13,13 @@ public class Enemy : MonoBehaviour
         Player player = other.GetComponent<Player>();
         player.TakeDamage(damage);
     }
-    // Start is called before the first frame update
+    
     void Start()
     {
         
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
         transform.position = Vector3.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
