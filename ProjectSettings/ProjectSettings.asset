@@ -795,11 +795,11 @@ PlayerSettings:
     m_VersionName: 
   apiCompatibilityLevel: 6
   activeInputHandler: 0
-  cloudProjectId: 
+  cloudProjectId: 119bc232-e915-409f-971b-587ae1dfe461
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: 
-  organizationId: 
+  projectName: Platformer
+  organizationId: denisdvcube
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   playerDataPath: 
