@@ -5,12 +5,13 @@ using UnityEngine;
 public class CharasterAnim : MonoBehaviour
 {
     public Animator animator;
-    int isWalkingHash, isRunningHash;
+    int isWalkingHash, isRunningHash, isWalkingBHash;
     // Start is called before the first frame update
     void Start()
     {
         isWalkingHash = Animator.StringToHash("isWalking");
         isRunningHash = Animator.StringToHash("isRunning");
+        isWalkingHash = Animator.StringToHash("isWalkingB");
     }
 
     // Update is called once per frame
@@ -18,13 +19,15 @@ public class CharasterAnim : MonoBehaviour
     {
         bool isRunning = animator.GetBool(isRunningHash);
         bool isWalking = animator.GetBool(isWalkingHash);
+        bool isWalkingB = animator.GetBool(isWalkingBHash);
         bool forwardPressed = Input.GetKey("w");
         bool runPressed = Input.GetKey("left shift");
-        if(!isWalking && forwardPressed)
+        bool backPressed = Input.GetKey("s");
+        if (!isWalking && forwardPressed)
         {
             animator.SetBool("isWalking", true);
         }
-        if (isWalking && !forwardPressed)
+        if (!isWalking && !forwardPressed)
         {
             animator.SetBool("isWalking", false);
         }
@@ -35,6 +38,14 @@ public class CharasterAnim : MonoBehaviour
         if (isRunning && (!forwardPressed || !runPressed))
         {
             animator.SetBool("isRunning", false);
+        }
+        if (!isWalkingB && backPressed)
+        {
+            animator.SetBool("isWalkingB", true);
+        }
+        if (!isWalkingB && !backPressed)
+        {
+            animator.SetBool("isWalkingB", false);
         }
     }
 }
