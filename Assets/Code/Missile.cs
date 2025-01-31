@@ -18,7 +18,14 @@ public class Missile : MonoBehaviour
     }
     void OnTriggerEnter(Collider other)
     {
-        Destroy(other.gameObject);
-        Destroy(gameObject);
+        if (other.tag == "Robot")
+        {
+
+        }
+        else
+        {
+            Destroy(other.gameObject);
+            Destroy(gameObject);
+        }      
     }
 }

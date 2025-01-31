@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Pashalka.unity
     guid: 0e86c6889779ea24fabe77ba0cf08680
+  - enabled: 1
+    path: Assets/Menu.unity
+    guid: 45a33487f9de334468ea687f83c9237b
   m_configObjects: {}
