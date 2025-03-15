@@ -22,6 +22,12 @@ public class Missile : MonoBehaviour
         {
 
         }
+        else if (other.tag == "Pillar")
+        {
+            Pillar pillar = other.GetComponent<Pillar>();
+            pillar.TakeDamage(1);
+            Destroy(gameObject);
+        }
         else
         {
             Destroy(other.gameObject);

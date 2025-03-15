@@ -6,6 +6,7 @@ TagManager:
   tags:
   - PlatformStop
   - Robot
+  - Pillar
   layers:
   - Default
   - TransparentFX
