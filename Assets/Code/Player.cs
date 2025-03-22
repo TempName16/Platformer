@@ -22,7 +22,7 @@ public class Player : MonoBehaviour
         print("Çהמנמגüו:" + health);
         if(health <= 0)
         {
-            int sceneIndex = SceneManager.GetActiveScene().buildIndex;
+            int sceneIndex = 0;
             SceneManager.LoadScene(sceneIndex);
         }
     }

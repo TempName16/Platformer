@@ -19,7 +19,7 @@ public class Pillar : MonoBehaviour
             spawner.SetActive(false);
             effect.SetActive(true);
             Destroy(effect, 3f);
-            Destroy(gameObject);
+            gameObject.SetActive(false);
         }
     }
 }
