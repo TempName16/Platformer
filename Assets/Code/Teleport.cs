@@ -8,6 +8,6 @@ public class Teleport : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        other.transform.position = teleportPoint.position;
+        if (other.tag == "Robot"|| other.tag == "Player") other.transform.position = teleportPoint.position;
     }
 }
